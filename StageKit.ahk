@@ -17,10 +17,10 @@ state:=Bin2Num(0000000000000000)
 onexit cleanup
 
 gui, add, text,, Please select the device number:
-gui,add,dropdownlist, vdevice, 1||2|3|4
-gui,add,button, gstart, Start
+gui, add, dropdownlist, vdevice, 1||2|3|4
+gui, add, button, gstart, Start
 
-gui,show
+gui, show
 return
 
 guiclose:
@@ -33,7 +33,7 @@ gui, submit
 
 device--
 
-gui,destroy
+gui, destroy
 
 gui, add, text,, StageKit
 
@@ -45,7 +45,7 @@ gui, add, button, gFogOn, Fog On
 
 gui, add, button, gFogOff, Fog Off
 
-gui,show
+gui, show
 
 return
 
